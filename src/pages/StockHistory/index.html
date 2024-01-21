@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock History</title>
+    <link rel="stylesheet" href="../../styles/common-styles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://www.unpkg.com/@devexperts/dxcharts-lite@2.0.1/dist/dxchart.min.js"></script>
+    <script type="importmap">
+			{
+				"imports": {
+					"@devexperts/dxcharts-lite/": "https://www.unpkg.com/@devexperts/dxcharts-lite@2.0.1/"
+				}
+			}
+		</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chart-container"></div>
+        <div class="info"></div>
+        <form class="chart-type-selector">
+            <label for="candle">
+                <input type="radio" name="chart-type" id="candle" value="candle" checked/>
+                Candle
+            </label>
+            <label for="bar">
+                <input type="radio" name="chart-type" id="bar" value="bar"/>
+                Bar
+            </label>
+            <label for="line">
+                <input type="radio" name="chart-type" id="line" value="line"/>
+                Line
+            </label>
+            <label for="area">
+                <input type="radio" name="chart-type" id="area" value="area"/>
+                Area
+            </label>
+            <label for="scatterPlot">
+                <input type="radio" name="chart-type" id="scatterPlot" value="scatterPlot"/>
+                Scatter Plot
+            </label>
+            <label for="hollow">
+                <input type="radio" name="chart-type" id="hollow" value="hollow"/>
+                Hollow
+            </label>
+            <label for="histogram">
+                <input type="radio" name="chart-type" id="histogram" value="histogram"/>
+                Histogram
+            </label>
+            <label for="baseline">
+                <input type="radio" name="chart-type" id="baseline" value="baseline"/>
+                Baseline
+            </label>
+            <label for="trend">
+                <input type="radio" name="chart-type" id="trend" value="trend"/>
+                Trend
+            </label>
+            <label for="heikinAshi">
+                <input type="radio" name="chart-type" id="heikinAshi" value="heikinAshi"/>
+                Heikin Ashi
+            </label>
+        </form>
+    </div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

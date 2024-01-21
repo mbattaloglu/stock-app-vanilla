@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Table</title>
+    <link rel="stylesheet" href="styles/common-styles.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="stock-table-container">
+                <h2 class="table-title title-letter-space">Realtime Prices for Dow Jones Stocks</h2>
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Previous Close</th>
+                            <th>Last</th>
+                            <th>%</th>
+                            <th>+/-</th>
+                            <th>Trade Time</th>
+                        </tr>
+                    </thead>
+                    <tbody class="stock-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <div class="gainer-table-container">
+                <h2 class="table-title">Biggest Gainers</h2>
+                <table class="gainers-table">
+                    <tbody class="gainers-table-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="losers-table-container">
+                <h2 class="table-title">Biggest Losers</h2>
+                <table class="losers-table">
+                    <tbody class="losers-table-body">                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

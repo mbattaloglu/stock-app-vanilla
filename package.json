@@ -1,0 +1,24 @@
+{
+  "name": "module2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jslint": "eslint **/*.js",
+    "jslint-fix": "eslint **/*.js --fix",
+    "csslint": "stylelint **/*.css",
+    "csslint-fix": "stylelint **/*.css --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "dependencies": {
+    "@devexperts/dxcharts-lite": "^2.0.2"
+  }
+}
